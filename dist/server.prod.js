@@ -1,0 +1,1 @@
+"use strict";var express=require("express"),sqlite3=require("sqlite3"),bodyParser=require("body-parser"),Sequelize=require("sequelize"),app=express();app.use(bodyParser.urlencoded({extended:!0}));var tasksRoutes=require("./routes/tasks_routes");app.set("view engine","pug"),app.use(tasksRoutes),app.listen(5e3);
